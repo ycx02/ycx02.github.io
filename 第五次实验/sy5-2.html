@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>网页sy5-2</title>
+</head>
+	<script type="text/javascript">
+	 function turnOnLight() {
+        document.getElementById("light").src="黄灯_20231211154506.jpg";
+    }
+
+    function turnOffLight() {
+        document.getElementById("light").src = "灰灯_20231211154631.jpg";
+    }
+	</script>
+<body>
+	<input type="button" name="submit" value="开灯" onClick="turnOnLight()"/>
+		< img src="灰灯_20231211154631.jpg" id="light">
+    <input type="button" name="submit" value="关灯" onClick="turnOffLight()"/>
+</body>
+</html>
