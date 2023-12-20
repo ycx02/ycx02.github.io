@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>网页sy4-1</title>
+<style>
+	*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "华文细黑";
+	font-size:20px;
+	
+}
+#box{
+	margin:0 auto;
+	width:1000px;
+	background: #808080;
+	border:2px solid #000000;
+}
+#header{
+	margin:0 auto;
+	height: 250px;
+	width:900px;
+	background: #FF0000;
+	align-items:center;
+	justify-content: space-between;
+	padding :25px;
+	margin:25px;
+	border:2px solid #FFFF00;	
+	margin-bottom:5px;
+}
+#logo{
+	float:left;
+	width: 300px;
+	height:40px;
+	border:2px solid #000000;
+	padding :20px;
+	margin:20px;
+	display: block;
+	background:#FFFF00;
+
+
+		
+}
+#banner{
+	float:right;
+	width: 300px;
+	height:40px;
+	border:2px solid #000000;	 
+	padding :20px;
+	margin:20px;
+	display: block;
+	background:#0000FF
+		
+}
+#menu{
+	float:right;
+	width: 800px;
+	height:40px;
+	border:3px solid #000000;
+	padding :25px;
+	margin:25px;
+	background:#008000
+}
+#container{
+	width:900px;
+	height:800px;
+	background:#00FF00;
+	border:2px solid #FFFF00;
+	align-items:center;
+	justify-content: space-between;
+	padding :25px;
+	margin:25px;
+	margin-bottom:5px;
+}
+#sidebar{
+	float:left;
+	width:250px;
+	height:450px;
+	padding :10px;
+	border:2px solid #FFFFFF;
+	background:#0000FF;
+	margin:10px;
+}
+#content{
+	float:right;
+	width:400px;
+	height:400px;
+	padding :10px;
+	border:2px solid #FFFFFF;
+	background:#00FFFF;
+	margin:10px;
+}
+#footer{
+	width:900px;
+	height:50px;
+	border:2px solid #FFFF00;
+	padding :25px;
+	margin:25px;
+	background:#FF0000;
+}
+</style>
+</head>
+<body>
+<div id="box">div->box 包含下面3个结构div(header,main,footer),布局网页宽度和居中
+<div id="header">div->beader 包含下面3个结构div布局头部高度和主要背景
+	<div id="logo">div->id=logo</div>
+	<div id="banner">div->id=banner</div>
+	<div id="menu">div->id=menu</div>
+  </div>
+	<div id="container">main
+	<div id="sidebar">div->id=sidebar</div>
+	<div id="content">div->id=ocntent</div>
+	</div>
+	<div id="footer">div->=footer</div>
+</div>	
+</body>
+</html>
