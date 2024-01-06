@@ -2,28 +2,53 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>实验sy5-1</title>
-	 <script type="text/javascript">
-    function calculateAverage() {
-        // 获取输入框的值
-        var num1 = document.getElementById("num1").value;
-        var num2 = document.getElementById("num2").value;
-        var num3 = document.getElementById("num3").value;
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sy7-1</title>
+    <style>
+        .out {
+            width: 200px;
+            height: 200px;
+            /* background-color: aqua; */
+            margin: 20px auto;
+        }
 
-        // 计算平均值
-        var average = (num1 + num2 + num3) / 3;
+        input {
+            width: 200px;
+            height: 20px;
+            margin-top: 10px;
+        }
 
-        // 显示平均值
-        alert("平均值是：" + average);
-    }
-</script>
+        button {
+            margin-top: 10px;
+        }
+    </style>
 </head>
+
 <body>
-	<label>输入三个整数：</label>
-	<input type="number" id="num1"value="2" ><br>
-    <input type="number" id="num2" value="6"><br>
-    <input type="number" id="num3" value="9"><br>
-    <input type="button" name="submit" value="计算！" onClick="calculateAverage()"/>
-	 
+    <div class="out">
+        输入三个整数：
+        <br>
+        <input type="number" class="one">
+        <br>
+        <input type="number" class="two">
+        <br>
+        <input type="number" class="three">
+        <br>
+        <button>求平均值</button>
+    </div>
+
+    <script>
+        var one = document.querySelector('.one');
+        var two = document.querySelector('.two');
+        var three = document.querySelector('.three');
+        var btn = document.querySelector('button');
+        btn.addEventListener('click', function () {
+            console.log(one.value);
+            var mean = (Number(one.value) + Number(two.value) + Number(three.value)) / 3;
+            alert(mean);
+        })
+    </script>
 </body>
+
 </html>
